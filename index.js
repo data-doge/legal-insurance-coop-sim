@@ -14,10 +14,7 @@ function coverageCapacity (numberOfMembers, lawyerCount) {
 
 update()
 
-$('input').on('change', function (e) {
-  console.log('meow')
-  update()
-})
+$('input').on('change keydown keypress keyup', update)
 
 function update () {
  var lawyerCount = parseInt($('#lawyer-count').val())
