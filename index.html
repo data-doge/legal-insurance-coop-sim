@@ -7,6 +7,8 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
+    <h1>legal insurance co-op</h1>
+
     <div>
       <h2>lawyers</h2>
 
@@ -15,7 +17,7 @@
       </div>
 
       <div>
-        cost: $<span id="lawyer-yearly-rate">65000</span> / year
+        lawyer yearly rate: $<span id="lawyer-yearly-rate">65000</span> / year
       </div>
 
       <div>
@@ -24,31 +26,32 @@
     </div>
 
     <div>
-      <h2>insurance co-op</h2>
+      <h2>members</h2>
 
       <div>
         number of members: <input id="number-of-members" value="271" type="number"></input>
       </div>
 
       <div>
-        monthly payment: $<input id="monthly-payment" value="20" type="number"></input> / month / member
+        monthly member payment: $<input id="monthly-payment" value="20" type="number"></input> / month / member
       </div>
 
       <div>
-        members coverage capacity: <span id="coverage-capacity">10</span>%
+        member coverage capacity: <span id="coverage-capacity">10</span>% of all members <small>[number-of-lawyers • client-capacity ÷ number-of-members • 100%]</small>
       </div>
 
       <div>
-        money contributed from settlements this year: $<span id="settlement-contributions">0</span>
+        contributions from settlements this year: $<span id="settlement-contributions">0</span>
       </div>
 
       <div>
         <br>
-        <b>surplus at end of the year: $<span id="excess-capital"></span></b>
+        <b>surplus at end of the year: $<span id="excess-capital"></span> / year</b><br>
+        <small>[(number-of-members • monthly-member-payment • 12) - (number-of-lawyers • lawyer-yearly-rate) + contributions-from-settlements-this-year]</small>
       </div>
     </div>
 
-    <div>
+    <div id="add-settlement-container">
       <h2>add settlement for police misconduct</h2>
 
       <form id="add-settlement-form">
