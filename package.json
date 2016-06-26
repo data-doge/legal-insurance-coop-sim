@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/data-doge/legal-insurance-coop-sim",
   "dependencies": {
+    "form-to-object": "^5.0.0",
     "jquery": "^3.0.0"
   },
   "devDependencies": {

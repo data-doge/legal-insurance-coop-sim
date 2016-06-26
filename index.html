@@ -38,18 +38,24 @@
         members coverage capacity: <span id="coverage-capacity">10</span>%
       </div>
 
-      <div class="">
+      <div>
+        money contributed from settlements: $<span id="settlement-contributions">0</span>
+      </div>
+
+      <div>
         excess capital at the end of the year: $<span id="excess-capital"></span>
       </div>
     </div>
 
-    <!-- <div>
-      <h2>settlements</h2>
+    <div>
+      <h2>add settlement for police misconduct</h2>
 
-      <div>
-        percentage of won settlement returned to co-op: <input id="settlement-percentage" value="20"></input>%
-      </div>
-    </div> -->
+      <form id="add-settlement-form">
+        settlement amount: $<input type="number" name="amount" value="1000"><br>
+        percent contributed back to co-op: <input type="number" name="percentContribution" value="20">%<br>
+        <input type="submit" value="add">
+      </form>
+    </div>
 
     <script src="bundle.js"></script>
   </body>
