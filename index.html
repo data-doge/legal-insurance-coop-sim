@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>legal-insurance-coop-sim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <h2>lawyers</h2>
+
+      <div>
+        number of lawyers: <input id="lawyer-count" value="1" type="number"></input>
+      </div>
+
+      <div>
+        cost: $<span id="lawyer-yearly-rate">65000</span> / year
+      </div>
+
+      <div>
+        client capacity: 30 clients / lawyer</span>
+      </div>
+    </div>
+
+    <div>
+      <h2>insurance co-op</h2>
+
+      <div>
+        number of members: <input id="number-of-members" value="300" type="number"></input>
+      </div>
+
+      <div>
+        monthly payment: $<span id="monthly-payment">10</span> / month / member
+      </div>
+
+      <div>
+        members coverage capacity: <span id="coverage-capacity">10</span>%
+      </div>
+    </div>
+
+    <!-- <div>
+      <h2>settlements</h2>
+
+      <div>
+        percentage of won settlement returned to co-op: <input id="settlement-percentage" value="20"></input>%
+      </div>
+    </div> -->
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
