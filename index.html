@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>legal-insurance-coop-sim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <h2>lawyers</h2>
+
+      <div>
+        number of lawyers: <input id="lawyer-count" value="1" type="number"></input>
+      </div>
+
+      <div>
+        cost: $<span id="lawyer-yearly-rate">65000</span> / year
+      </div>
+
+      <div>
+        client capacity: 30 clients / lawyer</span>
+      </div>
+    </div>
+
+    <div>
+      <h2>insurance co-op</h2>
+
+      <div>
+        number of members: <input id="number-of-members" value="271" type="number"></input>
+      </div>
+
+      <div>
+        monthly payment: $<input id="monthly-payment" value="20" type="number"></input> / month / member
+      </div>
+
+      <div>
+        members coverage capacity: <span id="coverage-capacity">10</span>%
+      </div>
+
+      <div>
+        money contributed from settlements: $<span id="settlement-contributions">0</span>
+      </div>
+
+      <div>
+        excess capital at the end of the year: $<span id="excess-capital"></span>
+      </div>
+    </div>
+
+    <div>
+      <h2>add settlement for police misconduct</h2>
+
+      <form id="add-settlement-form">
+        settlement amount: $<input type="number" name="amount" value="1000"><br>
+        percent contributed back to co-op: <input type="number" name="percentContribution" value="20">%<br>
+        <input type="submit" value="add">
+      </form>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
