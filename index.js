@@ -31,7 +31,3 @@ function excessCapital (lawyerCount, numberOfMembers, monthlyPayment) {
 function coverageCapacity (numberOfMembers, lawyerCount) {
   return parseInt(lawyerCount * clientCapacityPerLawyer / numberOfMembers * 100)
 }
-
-function getSettlementContributions () {
-  return settlementContributions
-}
